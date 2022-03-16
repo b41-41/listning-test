@@ -1,8 +1,8 @@
-import React from 'react'
-import { authService } from './fbase'
+import React from 'react';
+import { authService } from './fbase';
 
 function App() {
-  return <div className="App"></div>
+  return <div className="App"></div>;
 }
 
-export default App
+export default App;
