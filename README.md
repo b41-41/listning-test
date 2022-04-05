@@ -6,4 +6,4 @@
 
 # 사용 기술
 
-- TypeScript, Firebase, React
+- TypeScript, Firebase, React, Zustand
