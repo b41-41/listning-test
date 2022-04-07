@@ -1,0 +1,30 @@
+{
+  "processors": [
+    [
+      "stylelint-processor-styled-components",
+      {
+        "moduleName": "styled-components",
+        "importName": "default",
+        "strict": false,
+        "ignoreFiles": [],
+        "parserPlugins": [
+          "tsx",
+          ["decorators", { "decoratorsBeforeExport": true }],
+          "classProperties",
+          "exportExtensions",
+          "functionBind",
+          "functionSent"
+        ]
+      }
+    ]
+  ],
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components"
+  ],
+
+  "customSyntax": "@stylelint/postcss-css-in-js",
+  "rules": {
+    "function-whitespace-after": null
+  }
+}
