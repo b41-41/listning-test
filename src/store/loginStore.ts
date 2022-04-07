@@ -2,12 +2,14 @@ import create from 'zustand';
 
 type LoginStoreState = {
   isLogin: boolean;
-  updateLoginState: () => void;
+  updateLogin: () => void;
 };
 
-export const loginStore = create<LoginStoreState>((set) => ({
+const loginStore = create<LoginStoreState>((set) => ({
   isLogin: false,
-  updateLoginState() {
+  updateLogin() {
     set((state) => ({ isLogin: !state.isLogin }));
   },
 }));
+
+export default loginStore;
